@@ -6,14 +6,13 @@
 
 body{
     height: 100vh;
-    background:linear-gradient(#373B44,#4286f4);
+    background:#1f4a82;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
     color: white;
     font-family: sans-serif;
-    overflow: hidden;
 
 }
 
@@ -75,4 +74,27 @@ body{
 }
 
     
-    
+@media only screen and (max-width:375px) {
+    body{
+        height: 570px;
+        width: 768px;   
+    }
+}
+
+@media only screen and (max-height:736px){
+    .location{
+       height: 100px;
+    }
+    .temperature{
+        height:305px;
+    }
+    .notice{
+        left: -170px;
+        top: 58px;
+        visibility: hidden;
+    }
+    .degree-section:hover .notice{
+        visibility: visible;
+    }
+
+}
